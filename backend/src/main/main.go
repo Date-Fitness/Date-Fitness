@@ -2,6 +2,7 @@ package main
 
 import (
 	_ "example"
+	_ "location"
 	"hera"
 	"os"
 	"path"
