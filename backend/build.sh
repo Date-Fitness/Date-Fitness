@@ -4,4 +4,7 @@ export GOBIN=$GOPATH/bin
 echo $GOPATH
 echo $GOBIN
 
+#go get labix.org/v2/mgo
+
 go install main
+#./bin/main
