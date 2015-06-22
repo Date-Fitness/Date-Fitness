@@ -1,3 +1,5 @@
 backend/src/github.com/
 backend/bin/
 backend/pkg/
+*.swp
+*.swo
