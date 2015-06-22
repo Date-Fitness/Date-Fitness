@@ -9,12 +9,13 @@ echo "GOPATH is :$GOPATH"
 echo "GOBIN  is :$GOBIN" 
 
 echo "It is deploying hera, please wait..."
-go get -u github.com/xcodecraft/hera
+go get github.com/xcodecraft/hera
 echo "hera deploy success."
 
 rm -rf ./pkg/ ./bin/
 
 echo "It is complie your prj, please wait..."
+go get gopkg.in/mgo.v2
 go install main
 echo "complie success."
 

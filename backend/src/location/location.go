@@ -1,7 +1,7 @@
 package location
 
 import (
-	"hera"
+	hera  "github.com/xcodecraft/hera"
 	"strconv"
 )
 
