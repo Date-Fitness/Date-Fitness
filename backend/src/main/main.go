@@ -1,31 +1,14 @@
 package main
 
 import (
-	_ "example"
+	_ "api1"
 	_ "location"
-	"hera"
 	"os"
-	"path"
-	"runtime"
+	"fmt"
+	hera  "github.com/xcodecraft/hera"
 )
 
 func main() {
-	defer func() {
-		println("main exit, catch painc")
-	}()
-	initEnv()
-	startSvc()
-}
-
-func initEnv() {
-	os.Chdir(path.Dir(os.Args[0]))
-	hera.NewLogger("hera", hera.LevelDebug)
-	config := hera.NewConfig("../conf/hera.yaml")
-	hera.MakeServerVar(config)
-}
-
-func startSvc() {
-	runtime.GOMAXPROCS(runtime.NumCPU())
-	n := hera.Classic()
-	n.Run(":8083")
+	curentDir, _ := os.Getwd()
+	hera.Run(fmt.Sprintf("%s/conf/conf.yaml",curentDir))
 }
