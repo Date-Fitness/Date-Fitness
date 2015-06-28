@@ -1,0 +1,33 @@
+PODS:
+  - AMap3DMap (2.5.1)
+  - AMapSearch (2.5.0)
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - JSONKit (1.4)
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - AMap3DMap
+  - AMapSearch
+  - ASIHTTPRequest
+  - JSONKit
+
+SPEC CHECKSUMS:
+  AMap3DMap: 63349e4f7b6f097bce63853b24fe92ea0603a8f8
+  AMapSearch: eafa5a749b1078a46f15e6108e88307f78f75e9b
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+COCOAPODS: 0.37.2

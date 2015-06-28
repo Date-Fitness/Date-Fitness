@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862BF98AD9F7FC9F01A43A6C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2066F8B4DF28179E94C0DF7C /* libPods.a */; };
+		EE4FED6B1B2DB9840061DE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FED6A1B2DB9840061DE84 /* main.m */; };
+		EE4FED6E1B2DB9840061DE84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FED6D1B2DB9840061DE84 /* AppDelegate.m */; };
+		EE4FED711B2DB9840061DE84 /* date_fitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE4FED6F1B2DB9840061DE84 /* date_fitness.xcdatamodeld */; };
+		EE4FED741B2DB9840061DE84 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FED731B2DB9840061DE84 /* LoginViewController.m */; };
+		EE4FED771B2DB9840061DE84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4FED751B2DB9840061DE84 /* Main.storyboard */; };
+		EE4FED791B2DB9840061DE84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4FED781B2DB9840061DE84 /* Images.xcassets */; };
+		EE4FED7C1B2DB9840061DE84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4FED7A1B2DB9840061DE84 /* LaunchScreen.xib */; };
+		EE4FED881B2DB9840061DE84 /* date_fitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4FED871B2DB9840061DE84 /* date_fitnessTests.m */; };
+		EE6696931B369ED60022742E /* gym.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696921B369ED60022742E /* gym.png */; };
+		EE6696961B36A3E10022742E /* CustomCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696951B36A3E10022742E /* CustomCalloutView.m */; };
+		EE6696991B36A6BF0022742E /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696981B36A6BF0022742E /* CustomAnnotationView.m */; };
+		EE66969B1B36B0F20022742E /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = EE66969A1B36B0F20022742E /* building.png */; };
+		EE6696A41B36B9570022742E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696A31B36B9570022742E /* AboutViewController.m */; };
+		EE6696AC1B36CAAB0022742E /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696AB1B36CAAB0022742E /* plus.png */; };
+		EE6696B31B36EB9E0022742E /* EventCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B11B36EB9E0022742E /* EventCreateViewController.m */; };
+		EE6696B41B36EB9E0022742E /* EventCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */; };
+		EE6696B71B36F4960022742E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B61B36F4960022742E /* TabBarViewController.m */; };
+		EE6696BA1B36F5ED0022742E /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B91B36F5ED0022742E /* GenericViewController.m */; };
+		EE6696BC1B3926D00022742E /* path@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696BB1B3926D00022742E /* path@2x.png */; };
+		EE6696C01B3F937C0022742E /* UserPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696BF1B3F937C0022742E /* UserPointAnnotation.m */; };
+		EE6696C41B3FC9DD0022742E /* UIImage+JYExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696C31B3FC9DD0022742E /* UIImage+JYExtention.m */; };
+		EE6696C71B3FD7510022742E /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696C51B3FD7510022742E /* ok.png */; };
+		EE6696CA1B3FDC8E0022742E /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696C91B3FDC8E0022742E /* order.png */; };
+		EE6696CC1B3FF1330022742E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696CB1B3FF1330022742E /* login.png */; };
+		EE6696D11B4024860022742E /* CallOutDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696D01B4024860022742E /* CallOutDateView.m */; };
+		EE6696D71B4033D70022742E /* katong.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696D61B4033D70022742E /* katong.png */; };
+		EEF2BAA21B2F17340010D203 /* DateMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF2BAA11B2F17340010D203 /* DateMapViewController.m */; };
+		EEF2BAA61B3001560010D203 /* location_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAA41B3001560010D203 /* location_no@2x.png */; };
+		EEF2BAA71B3001560010D203 /* location_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAA51B3001560010D203 /* location_yes@2x.png */; };
+		EEF2BAA91B301D6E0010D203 /* location_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAA81B301D6E0010D203 /* location_normal.png */; };
+		EEF2BAAB1B32A3300010D203 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAAA1B32A3300010D203 /* search@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE4FED821B2DB9840061DE84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE4FED5D1B2DB9840061DE84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4FED641B2DB9840061DE84;
+			remoteInfo = "date-fitness";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C464EFC2F51DDB7DA7047ED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2066F8B4DF28179E94C0DF7C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0F1810BADA62DF364ADB61 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EE4FED651B2DB9840061DE84 /* date-fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4FED691B2DB9840061DE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4FED6A1B2DB9840061DE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE4FED6C1B2DB9840061DE84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE4FED6D1B2DB9840061DE84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE4FED701B2DB9840061DE84 /* date_fitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = date_fitness.xcdatamodel; sourceTree = "<group>"; };
+		EE4FED721B2DB9840061DE84 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EE4FED731B2DB9840061DE84 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EE4FED761B2DB9840061DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE4FED781B2DB9840061DE84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EE4FED7B1B2DB9840061DE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EE4FED811B2DB9840061DE84 /* date-fitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "date-fitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4FED861B2DB9840061DE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4FED871B2DB9840061DE84 /* date_fitnessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = date_fitnessTests.m; sourceTree = "<group>"; };
+		EE6696921B369ED60022742E /* gym.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gym.png; sourceTree = "<group>"; };
+		EE6696941B36A3E10022742E /* CustomCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutView.h; sourceTree = "<group>"; };
+		EE6696951B36A3E10022742E /* CustomCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutView.m; sourceTree = "<group>"; };
+		EE6696971B36A6BF0022742E /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		EE6696981B36A6BF0022742E /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		EE66969A1B36B0F20022742E /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
+		EE6696A21B36B9570022742E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		EE6696A31B36B9570022742E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		EE6696AB1B36CAAB0022742E /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		EE6696B01B36EB9E0022742E /* EventCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCreateViewController.h; sourceTree = "<group>"; };
+		EE6696B11B36EB9E0022742E /* EventCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCreateViewController.m; sourceTree = "<group>"; };
+		EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreateViewController.xib; sourceTree = "<group>"; };
+		EE6696B51B36F4960022742E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		EE6696B61B36F4960022742E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		EE6696B81B36F5ED0022742E /* GenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
+		EE6696B91B36F5ED0022742E /* GenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericViewController.m; sourceTree = "<group>"; };
+		EE6696BB1B3926D00022742E /* path@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "path@2x.png"; sourceTree = "<group>"; };
+		EE6696BE1B3F937C0022742E /* UserPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPointAnnotation.h; sourceTree = "<group>"; };
+		EE6696BF1B3F937C0022742E /* UserPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPointAnnotation.m; sourceTree = "<group>"; };
+		EE6696C21B3FC9DD0022742E /* UIImage+JYExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JYExtention.h"; sourceTree = "<group>"; };
+		EE6696C31B3FC9DD0022742E /* UIImage+JYExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JYExtention.m"; sourceTree = "<group>"; };
+		EE6696C51B3FD7510022742E /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
+		EE6696C91B3FDC8E0022742E /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
+		EE6696CB1B3FF1330022742E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		EE6696CF1B4024860022742E /* CallOutDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutDateView.h; sourceTree = "<group>"; };
+		EE6696D01B4024860022742E /* CallOutDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutDateView.m; sourceTree = "<group>"; };
+		EE6696D61B4033D70022742E /* katong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katong.png; sourceTree = "<group>"; };
+		EEF2BAA01B2F17340010D203 /* DateMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateMapViewController.h; sourceTree = "<group>"; };
+		EEF2BAA11B2F17340010D203 /* DateMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateMapViewController.m; sourceTree = "<group>"; };
+		EEF2BAA41B3001560010D203 /* location_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_no@2x.png"; sourceTree = "<group>"; };
+		EEF2BAA51B3001560010D203 /* location_yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_yes@2x.png"; sourceTree = "<group>"; };
+		EEF2BAA81B301D6E0010D203 /* location_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_normal.png; sourceTree = "<group>"; };
+		EEF2BAAA1B32A3300010D203 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE4FED621B2DB9840061DE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862BF98AD9F7FC9F01A43A6C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4FED7E1B2DB9840061DE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122454AA40BE53819A868470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C464EFC2F51DDB7DA7047ED /* Pods.debug.xcconfig */,
+				6F0F1810BADA62DF364ADB61 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D85773E192B01631D98E1B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2066F8B4DF28179E94C0DF7C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4FED5C1B2DB9840061DE84 = {
+			isa = PBXGroup;
+			children = (
+				EE4FED671B2DB9840061DE84 /* date-fitness */,
+				EE4FED841B2DB9840061DE84 /* date-fitnessTests */,
+				EE4FED661B2DB9840061DE84 /* Products */,
+				122454AA40BE53819A868470 /* Pods */,
+				1D85773E192B01631D98E1B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4FED661B2DB9840061DE84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FED651B2DB9840061DE84 /* date-fitness.app */,
+				EE4FED811B2DB9840061DE84 /* date-fitnessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE4FED671B2DB9840061DE84 /* date-fitness */ = {
+			isa = PBXGroup;
+			children = (
+				EE6696C11B3FC9CE0022742E /* utils */,
+				EE6696BD1B3F93510022742E /* domain */,
+				EEF2BAA31B3000980010D203 /* images */,
+				EE6696B51B36F4960022742E /* TabBarViewController.h */,
+				EE6696B61B36F4960022742E /* TabBarViewController.m */,
+				EE4FED6C1B2DB9840061DE84 /* AppDelegate.h */,
+				EE4FED6D1B2DB9840061DE84 /* AppDelegate.m */,
+				EE6696971B36A6BF0022742E /* CustomAnnotationView.h */,
+				EE6696981B36A6BF0022742E /* CustomAnnotationView.m */,
+				EE6696941B36A3E10022742E /* CustomCalloutView.h */,
+				EE6696951B36A3E10022742E /* CustomCalloutView.m */,
+				EEF2BAA01B2F17340010D203 /* DateMapViewController.h */,
+				EEF2BAA11B2F17340010D203 /* DateMapViewController.m */,
+				EE4FED721B2DB9840061DE84 /* LoginViewController.h */,
+				EE4FED731B2DB9840061DE84 /* LoginViewController.m */,
+				EE4FED751B2DB9840061DE84 /* Main.storyboard */,
+				EE4FED781B2DB9840061DE84 /* Images.xcassets */,
+				EE4FED7A1B2DB9840061DE84 /* LaunchScreen.xib */,
+				EE4FED6F1B2DB9840061DE84 /* date_fitness.xcdatamodeld */,
+				EE4FED681B2DB9840061DE84 /* Supporting Files */,
+				EE6696A21B36B9570022742E /* AboutViewController.h */,
+				EE6696A31B36B9570022742E /* AboutViewController.m */,
+				EE6696B01B36EB9E0022742E /* EventCreateViewController.h */,
+				EE6696B11B36EB9E0022742E /* EventCreateViewController.m */,
+				EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */,
+				EE6696B81B36F5ED0022742E /* GenericViewController.h */,
+				EE6696B91B36F5ED0022742E /* GenericViewController.m */,
+			);
+			path = "date-fitness";
+			sourceTree = "<group>";
+		};
+		EE4FED681B2DB9840061DE84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FED691B2DB9840061DE84 /* Info.plist */,
+				EE4FED6A1B2DB9840061DE84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE4FED841B2DB9840061DE84 /* date-fitnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FED871B2DB9840061DE84 /* date_fitnessTests.m */,
+				EE4FED851B2DB9840061DE84 /* Supporting Files */,
+			);
+			path = "date-fitnessTests";
+			sourceTree = "<group>";
+		};
+		EE4FED851B2DB9840061DE84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE4FED861B2DB9840061DE84 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE6696BD1B3F93510022742E /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE6696BE1B3F937C0022742E /* UserPointAnnotation.h */,
+				EE6696BF1B3F937C0022742E /* UserPointAnnotation.m */,
+				EE6696CF1B4024860022742E /* CallOutDateView.h */,
+				EE6696D01B4024860022742E /* CallOutDateView.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		EE6696C11B3FC9CE0022742E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE6696C21B3FC9DD0022742E /* UIImage+JYExtention.h */,
+				EE6696C31B3FC9DD0022742E /* UIImage+JYExtention.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		EEF2BAA31B3000980010D203 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EE6696D61B4033D70022742E /* katong.png */,
+				EE6696CB1B3FF1330022742E /* login.png */,
+				EE6696C51B3FD7510022742E /* ok.png */,
+				EE6696C91B3FDC8E0022742E /* order.png */,
+				EE6696BB1B3926D00022742E /* path@2x.png */,
+				EE6696AB1B36CAAB0022742E /* plus.png */,
+				EE66969A1B36B0F20022742E /* building.png */,
+				EE6696921B369ED60022742E /* gym.png */,
+				EEF2BAAA1B32A3300010D203 /* search@2x.png */,
+				EEF2BAA81B301D6E0010D203 /* location_normal.png */,
+				EEF2BAA41B3001560010D203 /* location_no@2x.png */,
+				EEF2BAA51B3001560010D203 /* location_yes@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE4FED641B2DB9840061DE84 /* date-fitness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4FED8B1B2DB9840061DE84 /* Build configuration list for PBXNativeTarget "date-fitness" */;
+			buildPhases = (
+				0C672D98A00AB07197767BD7 /* Check Pods Manifest.lock */,
+				EE4FED611B2DB9840061DE84 /* Sources */,
+				EE4FED621B2DB9840061DE84 /* Frameworks */,
+				EE4FED631B2DB9840061DE84 /* Resources */,
+				E777F4721C1A62A4EF19D070 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "date-fitness";
+			productName = "date-fitness";
+			productReference = EE4FED651B2DB9840061DE84 /* date-fitness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE4FED801B2DB9840061DE84 /* date-fitnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4FED8E1B2DB9840061DE84 /* Build configuration list for PBXNativeTarget "date-fitnessTests" */;
+			buildPhases = (
+				EE4FED7D1B2DB9840061DE84 /* Sources */,
+				EE4FED7E1B2DB9840061DE84 /* Frameworks */,
+				EE4FED7F1B2DB9840061DE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE4FED831B2DB9840061DE84 /* PBXTargetDependency */,
+			);
+			name = "date-fitnessTests";
+			productName = "date-fitnessTests";
+			productReference = EE4FED811B2DB9840061DE84 /* date-fitnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE4FED5D1B2DB9840061DE84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Shen Guanpu";
+				TargetAttributes = {
+					EE4FED641B2DB9840061DE84 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					EE4FED801B2DB9840061DE84 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = EE4FED641B2DB9840061DE84;
+					};
+				};
+			};
+			buildConfigurationList = EE4FED601B2DB9840061DE84 /* Build configuration list for PBXProject "date-fitness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE4FED5C1B2DB9840061DE84;
+			productRefGroup = EE4FED661B2DB9840061DE84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE4FED641B2DB9840061DE84 /* date-fitness */,
+				EE4FED801B2DB9840061DE84 /* date-fitnessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE4FED631B2DB9840061DE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6696D71B4033D70022742E /* katong.png in Resources */,
+				EE6696C71B3FD7510022742E /* ok.png in Resources */,
+				EE6696CC1B3FF1330022742E /* login.png in Resources */,
+				EE6696B41B36EB9E0022742E /* EventCreateViewController.xib in Resources */,
+				EEF2BAA61B3001560010D203 /* location_no@2x.png in Resources */,
+				EE6696AC1B36CAAB0022742E /* plus.png in Resources */,
+				EE66969B1B36B0F20022742E /* building.png in Resources */,
+				EEF2BAA71B3001560010D203 /* location_yes@2x.png in Resources */,
+				EE6696CA1B3FDC8E0022742E /* order.png in Resources */,
+				EE6696BC1B3926D00022742E /* path@2x.png in Resources */,
+				EE4FED771B2DB9840061DE84 /* Main.storyboard in Resources */,
+				EEF2BAAB1B32A3300010D203 /* search@2x.png in Resources */,
+				EEF2BAA91B301D6E0010D203 /* location_normal.png in Resources */,
+				EE4FED7C1B2DB9840061DE84 /* LaunchScreen.xib in Resources */,
+				EE4FED791B2DB9840061DE84 /* Images.xcassets in Resources */,
+				EE6696931B369ED60022742E /* gym.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4FED7F1B2DB9840061DE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C672D98A00AB07197767BD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E777F4721C1A62A4EF19D070 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE4FED611B2DB9840061DE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6696C01B3F937C0022742E /* UserPointAnnotation.m in Sources */,
+				EE6696961B36A3E10022742E /* CustomCalloutView.m in Sources */,
+				EE6696BA1B36F5ED0022742E /* GenericViewController.m in Sources */,
+				EE4FED711B2DB9840061DE84 /* date_fitness.xcdatamodeld in Sources */,
+				EE4FED6E1B2DB9840061DE84 /* AppDelegate.m in Sources */,
+				EE4FED741B2DB9840061DE84 /* LoginViewController.m in Sources */,
+				EE6696991B36A6BF0022742E /* CustomAnnotationView.m in Sources */,
+				EE6696C41B3FC9DD0022742E /* UIImage+JYExtention.m in Sources */,
+				EE4FED6B1B2DB9840061DE84 /* main.m in Sources */,
+				EE6696B71B36F4960022742E /* TabBarViewController.m in Sources */,
+				EE6696B31B36EB9E0022742E /* EventCreateViewController.m in Sources */,
+				EEF2BAA21B2F17340010D203 /* DateMapViewController.m in Sources */,
+				EE6696A41B36B9570022742E /* AboutViewController.m in Sources */,
+				EE6696D11B4024860022742E /* CallOutDateView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4FED7D1B2DB9840061DE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4FED881B2DB9840061DE84 /* date_fitnessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE4FED831B2DB9840061DE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE4FED641B2DB9840061DE84 /* date-fitness */;
+			targetProxy = EE4FED821B2DB9840061DE84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE4FED751B2DB9840061DE84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE4FED761B2DB9840061DE84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE4FED7A1B2DB9840061DE84 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE4FED7B1B2DB9840061DE84 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE4FED891B2DB9840061DE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE4FED8A1B2DB9840061DE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE4FED8C1B2DB9840061DE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C464EFC2F51DDB7DA7047ED /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				INFOPLIST_FILE = "date-fitness/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE4FED8D1B2DB9840061DE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0F1810BADA62DF364ADB61 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				INFOPLIST_FILE = "date-fitness/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE4FED8F1B2DB9840061DE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "date-fitnessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/date-fitness.app/date-fitness";
+			};
+			name = Debug;
+		};
+		EE4FED901B2DB9840061DE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "date-fitnessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/date-fitness.app/date-fitness";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE4FED601B2DB9840061DE84 /* Build configuration list for PBXProject "date-fitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4FED891B2DB9840061DE84 /* Debug */,
+				EE4FED8A1B2DB9840061DE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4FED8B1B2DB9840061DE84 /* Build configuration list for PBXNativeTarget "date-fitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4FED8C1B2DB9840061DE84 /* Debug */,
+				EE4FED8D1B2DB9840061DE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4FED8E1B2DB9840061DE84 /* Build configuration list for PBXNativeTarget "date-fitnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4FED8F1B2DB9840061DE84 /* Debug */,
+				EE4FED901B2DB9840061DE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE4FED6F1B2DB9840061DE84 /* date_fitness.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE4FED701B2DB9840061DE84 /* date_fitness.xcdatamodel */,
+			);
+			currentVersion = EE4FED701B2DB9840061DE84 /* date_fitness.xcdatamodel */;
+			path = date_fitness.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE4FED5D1B2DB9840061DE84 /* Project object */;
+}

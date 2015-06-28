@@ -1,0 +1,5 @@
+platform:ios,'8.3' #mobile ios
+pod 'AMap3DMap' #3d map sdk
+pod 'AMapSearch' #search service sdk
+pod 'JSONKit'
+pod 'ASIHTTPRequest'

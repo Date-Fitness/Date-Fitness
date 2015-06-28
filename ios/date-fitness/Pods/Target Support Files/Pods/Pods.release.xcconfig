@@ -1,0 +1,8 @@
+ARCHS = $(ARCHS_STANDARD)
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMap3DMap" "$(PODS_ROOT)/AMapSearch"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AMap3DMap" "${PODS_ROOT}/Headers/Public/AMapSearch" "${PODS_ROOT}/Headers/Public/ASIHTTPRequest" "${PODS_ROOT}/Headers/Public/JSONKit" "${PODS_ROOT}/Headers/Public/Reachability" "$(SDKROOT)/usr/include/libxml2"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AMap3DMap" -isystem "${PODS_ROOT}/Headers/Public/AMapSearch" -isystem "${PODS_ROOT}/Headers/Public/ASIHTTPRequest" -isystem "${PODS_ROOT}/Headers/Public/JSONKit" -isystem "${PODS_ROOT}/Headers/Public/Reachability"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-ASIHTTPRequest" -l"Pods-JSONKit" -l"Pods-Reachability" -l"stdc++.6.0.9" -l"xml2.2" -l"z" -l"z.1" -framework "AMapSearchKit" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "MAMapKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
