@@ -3,6 +3,7 @@ package location
 import (
 	"log"
 	"os"
+	"hera"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
@@ -22,7 +23,7 @@ const  (
 )
 
 func  set(uid string, longitude float64, latitude float64)  error {
-	session, err := mgo.Dial(URL)
+	session, err := mgo.Dial(hera.SERVER["DB_NAME"])
 	if err != nil {
 		panic(err)
 	}

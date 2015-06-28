@@ -12,7 +12,8 @@ resuable :
         - "li2" : "dfdfd"
 
 dev :
-    DB_NAME : "hera_dev_db"
+    SVC_PORT : ":8083"
+    DB_NAME : "127.0.0.1:27017"
     DB_USER : "dev"
     DB_PWD  : "dev_pwd"
 
@@ -22,6 +23,7 @@ demo :
     DB_PWD  : "demo_pwd"
 
 online :
-    DB_NAME : "hera_onilne_db"
+    SVC_PORT : ":80"
+    DB_NAME : "10.10.72.139:27017"
     DB_USER : "online"
     DB_PWD  : "online_pwd"

@@ -27,5 +27,5 @@ func initEnv() {
 func startSvc() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	n := hera.Classic()
-	n.Run(":8083")
+	n.Run(hera.SERVER["SVC_PORT"])
 }
