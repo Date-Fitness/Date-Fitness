@@ -13,5 +13,5 @@ before_script:
 
 script:
   - export GOPATH=/gopath
-  - go get -t Date-Fitness/backend
+  - go get -t Date-Fitness
   - go test Date-Fitness/backend
