@@ -1,0 +1,17 @@
+image: daocloud/ci-golang:1.4
+
+services:
+  - mongodb
+
+install:
+  - sudo apt-get update
+  - sudo apt-get -y install bzr
+
+before_script:
+  - mkdir -p /gopath/src/Date-Fitness/backend
+  - mv ./* /gopath/src/Date-Fitness/backend
+
+script:
+  - export GOPATH=/gopath
+  - go get -t Date-Fitness/backend
+  - go test Date-Fitness/backend

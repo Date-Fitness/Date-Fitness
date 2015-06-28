@@ -22,8 +22,36 @@ const  (
 	MAX_DISTANCE = 20000000
 )
 
+var (
+	username string
+    password string
+    host     string
+    port     string
+    instance string
+	conn  	 string
+)
+
+func initParams() {
+	username = hera.SERVER["DB_USER"]
+	password = hera.SERVER["DB_PWD"]
+	host = hera.SERVER["DB_HOST"]
+	port = hera.SERVER["DB_PORT"]
+	instance = hera.SERVER["DB_INSTANCE"]
+	
+	conn := ""
+	if len(username) > 0 {
+		conn += username
+		if len(password) > 0 {
+			conn += ":" + password
+		}
+
+		conn += "@"
+	}
+}
+
 func  set(uid string, longitude float64, latitude float64)  error {
-	session, err := mgo.Dial(hera.SERVER["DB_NAME"])
+	initParams()
+	session, err := mgo.Dial(conn)
 	if err != nil {
 		panic(err)
 	}
@@ -36,8 +64,7 @@ func  set(uid string, longitude float64, latitude float64)  error {
 	aLogger = log.New(os.Stderr, "", log.LstdFlags)
 	mgo.SetLogger(aLogger)
 
-
-	c := session.DB("test").C("location")
+	c := session.DB(instance).C("location")
 
 	m := map[string]interface{}{ "loc": bson.M{"type":"Point", "coordinates": []float64{longitude, latitude}}, "uid": uid}
 	err = c.Insert(m)
@@ -49,7 +76,8 @@ func  set(uid string, longitude float64, latitude float64)  error {
 }
 
 func  get(uid string, longitude float64, latitude float64)  []Location {
-	session, err := mgo.Dial(URL)
+	initParams()
+	session, err := mgo.Dial(conn)
 	if err != nil {
 		panic(err)
 	}
@@ -62,7 +90,7 @@ func  get(uid string, longitude float64, latitude float64)  []Location {
 	aLogger = log.New(os.Stderr, "", log.LstdFlags)
 	mgo.SetLogger(aLogger)
 
-	c := session.DB("test").C("location")
+	c := session.DB(instance).C("location")
 
 	var result []Location
 	m := map[string]interface{}{ "loc" : bson.M{ "$nearSphere" : bson.M{ "$geometry" : bson.M{ "type" : "Point", "coordinates" : []float64{longitude, latitude}, "$maxDistance": MAX_DISTANCE}}}}

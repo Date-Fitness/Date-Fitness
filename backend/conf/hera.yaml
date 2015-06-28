@@ -1,6 +1,6 @@
 #!import "./module.yaml"
 
-__mode : "online"
+__mode : "dev"
 
 resuable : 
     USER : "neoduan"
@@ -13,17 +13,24 @@ resuable :
 
 dev :
     SVC_PORT : ":8083"
-    DB_NAME : "127.0.0.1:27017"
+    DB_HOST : "127.0.0.1"
+    DB_PORT : "27017"
     DB_USER : "dev"
     DB_PWD  : "dev_pwd"
+    DB_INSTANCE: "date_demo" 
 
 demo :
-    DB_NAME : "hera_demo_db"
-    DB_USER : "demo"
-    DB_PWD  : "demo_pwd"
+    DB_NAME : ":80"
+    DB_HOST : "10.10.72.139"
+    DB_PORT : "27017"
+    DB_USER : "unxRUFAWbqipEXu5"
+    DB_PWD  : "pCJngVGr8UAiB0D2H"
+    DB_INSTANCE: "date_demo" 
 
 online :
     SVC_PORT : ":80"
-    DB_NAME : "10.10.72.139:27017"
-    DB_USER : "online"
-    DB_PWD  : "online_pwd"
+    DB_HOST : "10.10.72.139"
+    DB_PORT : "27017"
+    DB_USER : "unxRUFAWbqipEXu5"
+    DB_PWD  : "pCJngVGr8UAiB0D2H"
+    DB_INSTANCE: "date" 
