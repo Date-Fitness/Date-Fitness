@@ -3,6 +3,7 @@ package main
 import (
 	_ "example"
 	_ "location"
+	_ "activity"
 	"hera"
 	"os"
 	"path"
