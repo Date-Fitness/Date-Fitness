@@ -1,13 +1,17 @@
 package hera
 
 import (
-	"log/syslog"
 	"net/http"
-	"time"
-	"fmt"
 )
 
-var Logger *XLogger = nil
+type XLogger interface {
+	Init(logName string, logLevel int) error
+	Debug(str string)
+	Info(str string)
+	Warn(str string)
+	Error(str string)
+	ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc)
+}
 
 const (
 	LevelDebug = iota
@@ -16,68 +20,18 @@ const (
 	LevelError
 )
 
-type XLogger struct {
-	logName   string
-	logLevel  int
-	logWriter *syslog.Writer
-}
+var Logger XLogger = nil
 
-func (this *XLogger) Init(logName string, logLevel int) {
-	this.logName = logName
-	this.logLevel = logLevel
-	this.logWriter = getWriter(this.logName)
-}
-func NewLogger(logName string, logLevel int) *XLogger {
-	if Logger == nil {
-		Logger = &XLogger{}
-		Logger.Init(logName, LevelDebug)
+func NewLogger(logName string, logLevel int) XLogger {
+	if SERVER["LOG_MODE"] == "file" {
+		Logger = &XFileLogger{}
+	} else if SERVER["LOG_MODE"] == "syslog" {
+		Logger = &XSysLogger{}
+	} else {
+		panic("logger mode is illegal")
+	}
+	if err := Logger.Init(logName, logLevel); err != nil {
+		panic("logName is empty or logLevel is < 0")
 	}
 	return Logger
-}
-
-func getWriter(logName string) *syslog.Writer {
-	writer, _ := syslog.New(syslog.LOG_INFO|syslog.LOG_LOCAL6, logName)
-	return writer
-}
-
-func (this *XLogger) Logger() *syslog.Writer {
-	if this.logName == "" {
-		panic("XLogger log name missing")
-	}
-	if this.logWriter == nil {
-		panic("XLogger log writer missing")
-	}
-	return this.logWriter
-}
-
-func (this *XLogger) Debug(str string) {
-	if this.logLevel <= LevelDebug {
-		this.Logger().Info(" [debug] " + str)
-	}
-}
-func (this *XLogger) Info(str string) {
-	if this.logLevel <= LevelInfo {
-		this.Logger().Info(" [info] " + str)
-	}
-}
-func (this *XLogger) Warn(str string) {
-	if this.logLevel <= LevelWarn {
-		this.Logger().Info(" [warn] " + str)
-	}
-}
-func (this *XLogger) Error(str string) {
-	if this.logLevel <= LevelError {
-		this.Logger().Info(" [error] " + str)
-	}
-}
-
-func (this *XLogger) ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
-	start := time.Now()
-	this.Info(fmt.Sprintf("Started %s %s", r.Method, r.URL.Path))
-
-	next(rw, r)
-
-	res := rw.(ResponseWriter)
-	this.Info(fmt.Sprintf("Completed %v %s in %v", res.Status(), http.StatusText(res.Status()), time.Since(start)))
-
 }

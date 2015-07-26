@@ -8,4 +8,12 @@
     directory       .
     default-to-interactive True
     hang-around     False
+    transcript      /tmp/zout.log.yj
 </runner>
+
+<eventlog>
+level info
+<logfile>
+    path /tmp/zout.log.yj
+</logfile>
+</eventlog>

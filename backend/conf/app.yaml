@@ -10,8 +10,6 @@ __env :
 __resuable :
     USER : "neoduan"
     PRJ_NAME : "date_fitness"
-    PRJ_PATH : "~/devspace/Date-Fitness/backend"
-    LOG_PATH : "/tmp/date_fitness.log"
     LIST :
         - "devp1" : "sgp"
         - "devp2" : "zy"
@@ -19,6 +17,10 @@ __resuable :
         - "devp4" : "byd"
 
 dev :
+    #log 目前支持 file，syslog
+    LOGKIT:
+        - "LOG_MODE" : "file"
+        - "LOG_PATH" : "/tmp/date_fitness.log"
     SVC_PORT : ":8384"
     DB_NAME : "127.0.0.1"
     DB_PORT : "6379"
