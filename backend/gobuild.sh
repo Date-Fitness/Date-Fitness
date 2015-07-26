@@ -1,7 +1,6 @@
 #!/bin/bash
 ROOT_DIR=`pwd`
-
-PRJ='hera_example'
+PRJ='date_fitness'
 
 export GOPATH=$ROOT_DIR
 export GOBIN=$ROOT_DIR/bin

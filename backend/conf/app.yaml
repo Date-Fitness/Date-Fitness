@@ -9,13 +9,14 @@ __env :
 
 __resuable :
     USER : "neoduan"
-    PRJ_NAME : "yj"
-    PRJ_PATH : "~/devspace/hera_demo"
-    LOG_PATH : "/tmp/hera_demo.log"
+    PRJ_NAME : "date_fitness"
+    PRJ_PATH : "~/devspace/Date-Fitness/backend"
+    LOG_PATH : "/tmp/date_fitness.log"
     LIST :
-        - "devp1" : "yangwum"
-        - "devp2" : "zhengy"
-        - "devp3" : "neoduan"
+        - "devp1" : "sgp"
+        - "devp2" : "zy"
+        - "devp3" : "sxj"
+        - "devp4" : "byd"
 
 dev :
     SVC_PORT : ":8384"

@@ -2,7 +2,7 @@ package api1
 
 import (
 	"fmt"
-	hera  "github.com/xcodecraft/hera"
+	hera "github.com/xcodecraft/hera"
 )
 
 type Api_nameREST struct {
@@ -16,7 +16,7 @@ func (this *Api_nameREST) Get(c *hera.Context) error {
 		if "1" == p_value {
 			return c.Error("key has error", 1001, 400)
 		} else {
-			data += "key[" + p_key + "]=" + p_value + " " + hera.SERVER["HELLO"]
+			data += "key[" + p_key + "]=" + p_value + " " + hera.SERVER["LOG_PATH"]
 		}
 	}
 
