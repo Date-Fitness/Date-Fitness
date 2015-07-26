@@ -3,22 +3,22 @@
 __mode : "dev"
 
 __env :
-    - "dev" 
+    - "dev"
     - "demo"
     - "online"
 
-__resuable : 
+__resuable :
     USER : "neoduan"
-    PRJ_NAME : "mate"
-    PRJ_PATH : "~/devspace/mate"
-    LOG_PATH : "/tmp/mate.log"
+    PRJ_NAME : "yj"
+    PRJ_PATH : "~/devspace/hera_demo"
+    LOG_PATH : "/tmp/hera_demo.log"
     LIST :
         - "devp1" : "yangwum"
         - "devp2" : "zhengy"
         - "devp3" : "neoduan"
 
 dev :
-    SVC_PORT : ":8083"
+    SVC_PORT : ":8384"
     DB_NAME : "127.0.0.1"
     DB_PORT : "6379"
     DB_NO   : "1"
