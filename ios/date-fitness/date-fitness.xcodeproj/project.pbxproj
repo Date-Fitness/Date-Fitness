@@ -23,7 +23,6 @@
 		EE6696A41B36B9570022742E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696A31B36B9570022742E /* AboutViewController.m */; };
 		EE6696AC1B36CAAB0022742E /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696AB1B36CAAB0022742E /* plus.png */; };
 		EE6696B31B36EB9E0022742E /* EventCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B11B36EB9E0022742E /* EventCreateViewController.m */; };
-		EE6696B41B36EB9E0022742E /* EventCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */; };
 		EE6696B71B36F4960022742E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B61B36F4960022742E /* TabBarViewController.m */; };
 		EE6696BA1B36F5ED0022742E /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696B91B36F5ED0022742E /* GenericViewController.m */; };
 		EE6696BC1B3926D00022742E /* path@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696BB1B3926D00022742E /* path@2x.png */; };
@@ -34,6 +33,14 @@
 		EE6696CC1B3FF1330022742E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696CB1B3FF1330022742E /* login.png */; };
 		EE6696D11B4024860022742E /* CallOutDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6696D01B4024860022742E /* CallOutDateView.m */; };
 		EE6696D71B4033D70022742E /* katong.png in Resources */ = {isa = PBXBuildFile; fileRef = EE6696D61B4033D70022742E /* katong.png */; };
+		EE733B6A1B48FC49008B4A1C /* PubFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE733B691B48FC49008B4A1C /* PubFeedViewController.m */; };
+		EE733B741B4919E6008B4A1C /* FeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE733B731B4919E6008B4A1C /* FeedCollectionViewCell.m */; };
+		EE7C92DD1B5B748900D67F0E /* ProfileEditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C92DC1B5B748900D67F0E /* ProfileEditTableViewController.m */; };
+		EE7C92E01B5B764000D67F0E /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C92DF1B5B764000D67F0E /* ProfileTableViewController.m */; };
+		EE7C92E31B5B774E00D67F0E /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C92E21B5B774E00D67F0E /* SettingTableViewController.m */; };
+		EE7C92E61B5B88E800D67F0E /* NewSignTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C92E51B5B88E800D67F0E /* NewSignTableViewController.m */; };
+		EECDB9581B64DB3D00B7866F /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDB9571B64DB3D00B7866F /* FeedTableViewController.m */; };
+		EECDB95B1B64DBEE00B7866F /* FeedTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDB95A1B64DBEE00B7866F /* FeedTableItem.m */; };
 		EEF2BAA21B2F17340010D203 /* DateMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF2BAA11B2F17340010D203 /* DateMapViewController.m */; };
 		EEF2BAA61B3001560010D203 /* location_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAA41B3001560010D203 /* location_no@2x.png */; };
 		EEF2BAA71B3001560010D203 /* location_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEF2BAA51B3001560010D203 /* location_yes@2x.png */; };
@@ -80,7 +87,6 @@
 		EE6696AB1B36CAAB0022742E /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		EE6696B01B36EB9E0022742E /* EventCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCreateViewController.h; sourceTree = "<group>"; };
 		EE6696B11B36EB9E0022742E /* EventCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCreateViewController.m; sourceTree = "<group>"; };
-		EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCreateViewController.xib; sourceTree = "<group>"; };
 		EE6696B51B36F4960022742E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		EE6696B61B36F4960022742E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		EE6696B81B36F5ED0022742E /* GenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
@@ -96,6 +102,22 @@
 		EE6696CF1B4024860022742E /* CallOutDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutDateView.h; sourceTree = "<group>"; };
 		EE6696D01B4024860022742E /* CallOutDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutDateView.m; sourceTree = "<group>"; };
 		EE6696D61B4033D70022742E /* katong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katong.png; sourceTree = "<group>"; };
+		EE733B681B48FC49008B4A1C /* PubFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubFeedViewController.h; sourceTree = "<group>"; };
+		EE733B691B48FC49008B4A1C /* PubFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubFeedViewController.m; sourceTree = "<group>"; };
+		EE733B721B4919E6008B4A1C /* FeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCollectionViewCell.h; sourceTree = "<group>"; };
+		EE733B731B4919E6008B4A1C /* FeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCollectionViewCell.m; sourceTree = "<group>"; };
+		EE7C92DB1B5B748900D67F0E /* ProfileEditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileEditTableViewController.h; sourceTree = "<group>"; };
+		EE7C92DC1B5B748900D67F0E /* ProfileEditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileEditTableViewController.m; sourceTree = "<group>"; };
+		EE7C92DE1B5B764000D67F0E /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		EE7C92DF1B5B764000D67F0E /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		EE7C92E11B5B774E00D67F0E /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		EE7C92E21B5B774E00D67F0E /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		EE7C92E41B5B88E800D67F0E /* NewSignTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSignTableViewController.h; sourceTree = "<group>"; };
+		EE7C92E51B5B88E800D67F0E /* NewSignTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSignTableViewController.m; sourceTree = "<group>"; };
+		EECDB9561B64DB3D00B7866F /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		EECDB9571B64DB3D00B7866F /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		EECDB9591B64DBEE00B7866F /* FeedTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableItem.h; sourceTree = "<group>"; };
+		EECDB95A1B64DBEE00B7866F /* FeedTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableItem.m; sourceTree = "<group>"; };
 		EEF2BAA01B2F17340010D203 /* DateMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateMapViewController.h; sourceTree = "<group>"; };
 		EEF2BAA11B2F17340010D203 /* DateMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateMapViewController.m; sourceTree = "<group>"; };
 		EEF2BAA41B3001560010D203 /* location_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_no@2x.png"; sourceTree = "<group>"; };
@@ -163,6 +185,9 @@
 		EE4FED671B2DB9840061DE84 /* date-fitness */ = {
 			isa = PBXGroup;
 			children = (
+				EE7C92DA1B5B746300D67F0E /* profile */,
+				EE733B711B4919BF008B4A1C /* feed */,
+				EE733B671B48FC14008B4A1C /* tabs */,
 				EE6696C11B3FC9CE0022742E /* utils */,
 				EE6696BD1B3F93510022742E /* domain */,
 				EEF2BAA31B3000980010D203 /* images */,
@@ -174,8 +199,6 @@
 				EE6696981B36A6BF0022742E /* CustomAnnotationView.m */,
 				EE6696941B36A3E10022742E /* CustomCalloutView.h */,
 				EE6696951B36A3E10022742E /* CustomCalloutView.m */,
-				EEF2BAA01B2F17340010D203 /* DateMapViewController.h */,
-				EEF2BAA11B2F17340010D203 /* DateMapViewController.m */,
 				EE4FED721B2DB9840061DE84 /* LoginViewController.h */,
 				EE4FED731B2DB9840061DE84 /* LoginViewController.m */,
 				EE4FED751B2DB9840061DE84 /* Main.storyboard */,
@@ -187,7 +210,6 @@
 				EE6696A31B36B9570022742E /* AboutViewController.m */,
 				EE6696B01B36EB9E0022742E /* EventCreateViewController.h */,
 				EE6696B11B36EB9E0022742E /* EventCreateViewController.m */,
-				EE6696B21B36EB9E0022742E /* EventCreateViewController.xib */,
 				EE6696B81B36F5ED0022742E /* GenericViewController.h */,
 				EE6696B91B36F5ED0022742E /* GenericViewController.m */,
 			);
@@ -227,6 +249,8 @@
 				EE6696BF1B3F937C0022742E /* UserPointAnnotation.m */,
 				EE6696CF1B4024860022742E /* CallOutDateView.h */,
 				EE6696D01B4024860022742E /* CallOutDateView.m */,
+				EECDB9591B64DBEE00B7866F /* FeedTableItem.h */,
+				EECDB95A1B64DBEE00B7866F /* FeedTableItem.m */,
 			);
 			name = domain;
 			sourceTree = "<group>";
@@ -238,6 +262,43 @@
 				EE6696C31B3FC9DD0022742E /* UIImage+JYExtention.m */,
 			);
 			name = utils;
+			sourceTree = "<group>";
+		};
+		EE733B671B48FC14008B4A1C /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2BAA01B2F17340010D203 /* DateMapViewController.h */,
+				EEF2BAA11B2F17340010D203 /* DateMapViewController.m */,
+				EE733B681B48FC49008B4A1C /* PubFeedViewController.h */,
+				EE733B691B48FC49008B4A1C /* PubFeedViewController.m */,
+				EE7C92DE1B5B764000D67F0E /* ProfileTableViewController.h */,
+				EE7C92DF1B5B764000D67F0E /* ProfileTableViewController.m */,
+				EE7C92E11B5B774E00D67F0E /* SettingTableViewController.h */,
+				EE7C92E21B5B774E00D67F0E /* SettingTableViewController.m */,
+			);
+			name = tabs;
+			sourceTree = "<group>";
+		};
+		EE733B711B4919BF008B4A1C /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				EE733B721B4919E6008B4A1C /* FeedCollectionViewCell.h */,
+				EE733B731B4919E6008B4A1C /* FeedCollectionViewCell.m */,
+				EE7C92E41B5B88E800D67F0E /* NewSignTableViewController.h */,
+				EE7C92E51B5B88E800D67F0E /* NewSignTableViewController.m */,
+				EECDB9561B64DB3D00B7866F /* FeedTableViewController.h */,
+				EECDB9571B64DB3D00B7866F /* FeedTableViewController.m */,
+			);
+			name = feed;
+			sourceTree = "<group>";
+		};
+		EE7C92DA1B5B746300D67F0E /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C92DB1B5B748900D67F0E /* ProfileEditTableViewController.h */,
+				EE7C92DC1B5B748900D67F0E /* ProfileEditTableViewController.m */,
+			);
+			name = profile;
 			sourceTree = "<group>";
 		};
 		EEF2BAA31B3000980010D203 /* images */ = {
@@ -344,7 +405,6 @@
 				EE6696D71B4033D70022742E /* katong.png in Resources */,
 				EE6696C71B3FD7510022742E /* ok.png in Resources */,
 				EE6696CC1B3FF1330022742E /* login.png in Resources */,
-				EE6696B41B36EB9E0022742E /* EventCreateViewController.xib in Resources */,
 				EEF2BAA61B3001560010D203 /* location_no@2x.png in Resources */,
 				EE6696AC1B36CAAB0022742E /* plus.png in Resources */,
 				EE66969B1B36B0F20022742E /* building.png in Resources */,
@@ -410,15 +470,23 @@
 				EE6696C01B3F937C0022742E /* UserPointAnnotation.m in Sources */,
 				EE6696961B36A3E10022742E /* CustomCalloutView.m in Sources */,
 				EE6696BA1B36F5ED0022742E /* GenericViewController.m in Sources */,
+				EECDB95B1B64DBEE00B7866F /* FeedTableItem.m in Sources */,
 				EE4FED711B2DB9840061DE84 /* date_fitness.xcdatamodeld in Sources */,
+				EE733B741B4919E6008B4A1C /* FeedCollectionViewCell.m in Sources */,
+				EE7C92E61B5B88E800D67F0E /* NewSignTableViewController.m in Sources */,
 				EE4FED6E1B2DB9840061DE84 /* AppDelegate.m in Sources */,
 				EE4FED741B2DB9840061DE84 /* LoginViewController.m in Sources */,
 				EE6696991B36A6BF0022742E /* CustomAnnotationView.m in Sources */,
 				EE6696C41B3FC9DD0022742E /* UIImage+JYExtention.m in Sources */,
 				EE4FED6B1B2DB9840061DE84 /* main.m in Sources */,
+				EE7C92E01B5B764000D67F0E /* ProfileTableViewController.m in Sources */,
 				EE6696B71B36F4960022742E /* TabBarViewController.m in Sources */,
 				EE6696B31B36EB9E0022742E /* EventCreateViewController.m in Sources */,
+				EE7C92E31B5B774E00D67F0E /* SettingTableViewController.m in Sources */,
 				EEF2BAA21B2F17340010D203 /* DateMapViewController.m in Sources */,
+				EE7C92DD1B5B748900D67F0E /* ProfileEditTableViewController.m in Sources */,
+				EECDB9581B64DB3D00B7866F /* FeedTableViewController.m in Sources */,
+				EE733B6A1B48FC49008B4A1C /* PubFeedViewController.m in Sources */,
 				EE6696A41B36B9570022742E /* AboutViewController.m in Sources */,
 				EE6696D11B4024860022742E /* CallOutDateView.m in Sources */,
 			);
@@ -570,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -589,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

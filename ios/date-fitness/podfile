@@ -1,5 +1,6 @@
 platform:ios,'8.3' #mobile ios
-pod 'AMap3DMap' #3d map sdk
-pod 'AMapSearch' #search service sdk
-pod 'JSONKit'
-pod 'ASIHTTPRequest'
+pod 'AMap3DMap', '~> 2.5.1' #3d map sdk
+pod 'AMapSearch', '~> 2.5.0' #search service sdk
+pod 'JSONKit', '~> 1.5pre'
+pod 'ASIHTTPRequest', '~> 1.8.2'
+pod "Qiniu", "~> 7.0"

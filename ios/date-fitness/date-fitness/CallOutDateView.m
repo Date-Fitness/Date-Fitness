@@ -1,7 +1,7 @@
 //
 //  CallOutDateView.m
 //  date-fitness
-//
+//  约会信息弹出视图
 //  Created by Shen Guanpu on 15/6/28.
 //  Copyright (c) 2015年 Shen Guanpu. All rights reserved.
 //

@@ -11,6 +11,9 @@
 @interface LoginViewController : UIViewController
 
 - (IBAction)verifyAction:(id)sender;
+-(IBAction)textFieldDoneEditing:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *phone;
+@property (weak, nonatomic) IBOutlet UITextField *code;
 
 @end
 

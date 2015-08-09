@@ -326,11 +326,12 @@
 
 
 -(void)newDateEventAction{
+     [self performSegueWithIdentifier:@"new_event" sender:self];
 
-    EventCreateViewController *controller = [[EventCreateViewController alloc]initWithNibName:@"EventCreateViewController" bundle:nil];
-  
-    [self presentViewController:controller animated:YES completion:nil];
-//    
+//    EventCreateViewController *controller = [[EventCreateViewController alloc]init];
+//  
+//    [self presentViewController:controller animated:YES completion:nil];
+//
 //    self.view.window.rootViewController = controller;
 //    
 //    [self.view.window sendSubviewToBack:self.view];

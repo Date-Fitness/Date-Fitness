@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/sgp/Library/Developer/Shared/Documentation/DocSets/com.yuejian.date-fitness.date-fitness.docset
+Time: 2015-07-04 06:38:08 +0000

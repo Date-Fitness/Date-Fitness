@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventCreateViewController : UIViewController
+@interface EventCreateViewController : UITableViewController<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *topic;
+@property (weak, nonatomic) IBOutlet UITextField *address;
+@property (weak, nonatomic) IBOutlet UITextField *tag;
+@property (weak, nonatomic) IBOutlet UITextView *note;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+- (IBAction)addVoice:(id)sender;
+- (IBAction)cancel:(id)sender;
+- (IBAction)pub:(id)sender;
 
 @end

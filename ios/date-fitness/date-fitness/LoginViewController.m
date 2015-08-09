@@ -30,11 +30,27 @@
 }
 - (IBAction)loginAction:(id)sender {
     
+    
+//    NSURL *url = [NSURL URLWithString:@"http://ksfjuice.youku.com/like.php?id=48&r=0.567598280124365"];
+//    NSString *response;
+//    for(int i=0;i<10;i++){
+//        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+//         [request startSynchronous];
+//        response = [request responseString];
+//       
+//        
+//    }
+//    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:response delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+//    [alertview show];
+//    
+
     NSURL *url = [NSURL URLWithString:@"http://yuejian001.sinaapp.com/PassportRest/get_cookie/254d40f3da1cc281ca2ff7a653b9199a"];
+
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request startSynchronous];
     NSError *error = [request error];
 //    @try {
+    
         if (error) {
             NSLog(@"[error] http request");
         }else{
@@ -46,21 +62,34 @@
             NSLog(@"Person: %@",err);
             
             if ([err isEqualToString: @"0"]) {
-                UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:@"登录成功" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+                NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+                NSString* value = [ud objectForKey:@"phone"];
+                NSString *msg;
+                if (value != nil && value.length>0) {
+                    msg = [NSString stringWithFormat:@"first 欢迎你 %@",value];
+                }else{
+                    [ud setObject:[self.phone text] forKey:@"phone"];
+                    msg = @"welcome";
+                }
+               
+                UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message: msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
                 [alertview show];
                 
                [self performSegueWithIdentifier:@"tabbar" sender:self];
             }else{
                 UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:@"登录失败" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
                 [alertview show];
+                
+                [self performSegueWithIdentifier:@"tabbar" sender:self];
             }
         }
+    
 
 //    }
 //    @catch (NSException *exception) {
 //         NSLog(@"Exception=%@\nStack Trace:%@", exception, [exception callStackSymbols]);
 //    }
-    
+
         NSLog(@"[Completion] http request");
     return;
 }
@@ -110,5 +139,12 @@
      timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(verifyTimer) userInfo:nil repeats:YES];
 }
 
+-(IBAction)textFieldDoneEditing:(id)sender{
+    [sender resignFirstResponder];
+}
+-(IBAction)backgroudTap:(id)sender{
+    [self.phone resignFirstResponder];
+    [self.code resignFirstResponder];
+}
 
 @end

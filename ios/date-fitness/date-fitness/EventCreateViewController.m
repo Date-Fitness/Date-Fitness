@@ -37,4 +37,17 @@
 }
 */
 
+- (IBAction)addVoice:(id)sender {
+}
+
+- (IBAction)cancel:(id)sender {
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)pub:(id)sender {
+    NSLog(@"topic: %@ address: %@",self.topic.text,self.address.text);
+    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:@"发布成功" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+    [alertview show];
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
